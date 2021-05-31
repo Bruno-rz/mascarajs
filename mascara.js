@@ -44,3 +44,26 @@
     };
   };
   </script>
+
+<script>
+function showCPF() {
+  $("#divcpf").show();
+  $("#divcnpj").hide();
+}
+
+function showCNPJ() {
+  $("#divcnpj").show();
+  $("#divcpf").hide();
+}
+$(document).ready(function() {
+  $("#pessoa-fisica").click(function() {
+    showCPF();
+  });
+  $("#pessoa-juridica").click(function() {
+    showCNPJ();
+  });
+  showCPF();
+});
+
+
+</script>
